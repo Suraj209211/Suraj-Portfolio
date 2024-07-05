@@ -119,19 +119,19 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Working with Suraj was an absolute delight. His unwavering professionalism, quick responsiveness, and commitment to excellence were clear throughout our collaboration. Suraj's passion for every detail of development is truly remarkable. If you're looking to transform your website and elevate your brand, Suraj is the perfect partner to bring your vision to life.",
     name: "Rishi Jain",
     title: "SDE at Infosys",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Collaborating with Suraj was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Suraj is the ideal partner write a new senstense",
     name: "Simon Cheng",
-    title: "Devrel at Vaunt.Dev",
+    title: "Devrel at Vaunt.Dev Bay Area",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+      "Working with Suraj was an incredible experience. His professionalism, prompt communication, and unwavering dedication to delivering top-notch results were evident in every phase of our project. Suraj's passion for every detail of development shines brightly. His ability to innovate and solve problems efficiently made a significant impact on our progress. Suraj's collaborative spirit and positive attitude fostered a productive and enjoyable working environment. If you're aiming to transform your website and enhance your brand, Suraj is the perfect partner to achieve your goals and exceed expectations.",
     name: "Dr. P Selvaraj ",
     title: "Associate Professor at SRM IST CTECH DEPARTMENT. ",
   },

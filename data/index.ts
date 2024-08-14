@@ -229,4 +229,9 @@ export const socialMedia = [
     img: "/link.svg",
     src: "https://www.linkedin.com/in/suraj-mahapatra-029211/", // Add the correct URL
   },
+  {
+    id: 4,
+    img: "/contribution.svg",
+    src: "/https://github.com/Suraj209211",
+  },
 ];

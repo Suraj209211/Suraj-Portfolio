@@ -22,7 +22,7 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll();
 
-  // set true for the initial state so that nav bar is visible in the hero section
+  // Set true for the initial state so that nav bar is visible in the hero section
   const [visible, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
@@ -31,7 +31,7 @@ export const FloatingNav = ({
       let direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
-        // also set true for the initial state
+        // Also set true for the initial state
         setVisible(true);
       } else {
         if (direction < 0) {
@@ -63,9 +63,11 @@ export const FloatingNav = ({
         )}
         style={{
           backdropFilter: visible ? "blur(30px) saturate(300%)" : "none",
-          WebkitBackdropFilter: visible ? "blur(30px) saturate(300%)" : "none", // safari
+          WebkitBackdropFilter: visible ? "blur(30px) saturate(300%)" : "none", // Safari specific
           backgroundColor: visible ? "rgba(17, 25, 40, 0.75)" : "transparent",
           borderRadius: "30px",
+          transition:
+            "backdrop-filter 0.2s ease-in-out, background-color 0.2s ease-in-out", // Smooth transition for Safari
         }}
       >
         {navItems.map((navItem: any, idx: number) => (
@@ -73,13 +75,11 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-500 hover:text-neutral-500 transition duration-300 ease-in-out transform hover:scale-110 "
+              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-500 hover:text-neutral-500 transition duration-300 ease-in-out transform hover:scale-110"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            {/* add !cursor-pointer */}
-            {/* remove hidden sm:block for the mobile responsive */}
-            <span className=" text-sm !cursor-pointer">{navItem.name}</span>
+            <span className="text-sm !cursor-pointer">{navItem.name}</span>
           </Link>
         ))}
       </motion.div>
